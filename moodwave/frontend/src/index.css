@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Variables CSS pour le thème glassy + humeurs */
+:root {
+  --bg: #0f172a;
+  --panel: rgba(255, 255, 255, 0.08);
+  --panel-border: rgba(255, 255, 255, 0.15);
+  --accent: #f59e0b;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+/* Classes utilitaires glass */
+.glass {
+  background: var(--panel);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--panel-border);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animation du vinyle */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Focus accessible */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Réduction d’animation si demandé par l’utilisateur */
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow {
+    animation: none;
+  }
+}
