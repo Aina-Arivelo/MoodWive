@@ -98,12 +98,12 @@ JAMENDO_CLIENT_ID=ton_client_id_ici
 > 1. Va sur [https://devportal.jamendo.com](https://devportal.jamendo.com)  
 > 2. Crée un compte / connecte-toi  
 > 3. Crée une nouvelle application  
-> 4. Copie le **Client ID**
+> 4. Copie le **Client ID** dans le env.example
 
 ### 3. Lancer le backend
 ```bash
 cd backend
-npm install
+cp env.example .env
 npm run dev
 ```
 Le serveur démarre sur `http://localhost:3001`
@@ -114,6 +114,7 @@ Ouvre un **nouveau terminal** :
 
 ```bash
 cd frontend
+cp env.example .env
 npm install
 npm run dev
 ```
