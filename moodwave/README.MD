@@ -1,15 +1,15 @@
-```markdown
-# 🌊 MoodWave
+
+# MoodWave
 
 **Générateur de playlist selon ton humeur**
 
 MoodWave est une application web qui génère instantanément une playlist de musique libre de droits adaptée à ton état d’esprit. Choisis une humeur, et l’application te propose 12 titres que tu peux écouter directement.
 
-Projet de portfolio réalisé avec React, Tailwind CSS et l’API Jamendo.
+Projet personnel réalisé avec React, Tailwind CSS et l’API Jamendo.
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Sélection d’humeur en un clic (Joyeux, Calme, Sport, Concentration, Mélancolique)
 - Génération automatique d’une playlist de 12 titres libres de droits
@@ -17,28 +17,10 @@ Projet de portfolio réalisé avec React, Tailwind CSS et l’API Jamendo.
 - Disque vinyle animé qui tourne pendant la lecture
 - Thème **glassy** (glassmorphism) avec changement de palette de couleurs selon l’humeur
 - Mode démo automatique si aucune clé API n’est configurée
-- Design responsive (mobile + desktop)
-- Accessible (contrastes, focus clavier, zones tactiles ≥ 44px)
 
 ---
 
-## 🎨 Direction artistique
-
-| Humeur          | Couleur principale     | Code couleur |
-|-----------------|------------------------|--------------|
-| Joyeux          | Ambre chaud            | `#f59e0b`    |
-| Calme           | Turquoise profond      | `#2dd4bf`    |
-| Sport           | Rouge-orange énergique | `#f97316`    |
-| Concentration   | Violet nuit            | `#a78bfa`    |
-| Mélancolique    | Bleu pluie             | `#60a5fa`    |
-
-- Typographie : **Playfair Display** (titres) + **Inter** (interface)
-- Effet verre dépoli (backdrop-blur + transparence)
-- Mise en page 2 colonnes sur desktop, 1 colonne sur mobile
-
----
-
-## 🛠️ Stack technique
+## Stack technique
 
 **Frontend**
 - React 18 + Vite
@@ -55,7 +37,7 @@ Projet de portfolio réalisé avec React, Tailwind CSS et l’API Jamendo.
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 moodwave/
@@ -86,7 +68,7 @@ moodwave/
 
 ---
 
-## 🚀 Installation et lancement
+## Installation et lancement
 
 ### Prérequis
 - Node.js 18 ou supérieur
@@ -120,6 +102,8 @@ JAMENDO_CLIENT_ID=ton_client_id_ici
 
 ### 3. Lancer le backend
 ```bash
+cd backend
+npm install
 npm run dev
 ```
 Le serveur démarre sur `http://localhost:3001`
@@ -138,41 +122,21 @@ L’application est accessible sur **http://localhost:5173**
 
 ---
 
-## 🔑 Mode démo
+## Mode démo
 
 Si aucun `JAMENDO_CLIENT_ID` n’est renseigné (ou en cas d’erreur API), l’application bascule automatiquement en **mode démo** avec des pistes de démonstration.  
 Un message clair s’affiche pour informer l’utilisateur.
 
 ---
 
-## 📱 Responsive
-
-- Desktop : mise en page en deux colonnes (lecteur à gauche, playlist à droite)
-- Mobile (à partir de 390px) : une seule colonne, composants empilés
-
----
-
-## ♿ Accessibilité
-
-- Contrastes respectés
-- Focus clavier visible
-- Zones tactiles minimum 44 × 44 px
-- Support de `prefers-reduced-motion`
-
----
-
-## 📄 Licence
-
-Projet réalisé dans un cadre de portfolio.  
+## Licence
+  
 La musique provient de l’API Jamendo et reste sous licence Creative Commons selon les conditions de chaque artiste.
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
-Safidiniaina Rakotoarivelo – Projet portfolio 2026
+Safidiniaina Rakotoarivelo – Projet Personnel 2026
 
----
-
-Fait avec ❤️ et beaucoup de Tailwind.
 ```
